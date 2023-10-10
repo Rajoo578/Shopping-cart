@@ -10,6 +10,7 @@ const Home = () => {
     const [searchInput, setSearchInput] = useState('');
     const [productData, setProductData] = useState([]);
 
+    // api call
     async function getResponse(){
         const res = await fetch('https://fakestoreapi.com/products')
                           .then(res=> res.json());
